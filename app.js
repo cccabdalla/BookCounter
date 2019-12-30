@@ -1,12 +1,9 @@
 const express = require('express');
 const app = express();
 const morgan = require('morgan');
+const routes = require('./routes');
 
 app.use(morgan('dev'));
-app.use(function(req,res,next){
-    res.status(200).json({
-        msg: 'it works'
-    });
-});
+app.use('/',routes.router);
 
 module.exports = app;
