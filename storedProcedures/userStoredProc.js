@@ -35,8 +35,8 @@ function storedProcs() {
         resultSetColumns: ['accountNumber' ,'accountName','debit','credit']
         //resultSetColumns: ['accountNumber' ,'accountName','debit','credit','branchCode','branchName','address','tel','fax']
     };
-    this.sp_emp_getemployees = {
-        name: 'sp_emp_getemployees',
+    this.sp_meal_getmealtypes = {
+        name: 'sp_meal_getmealtypes',
         params: {
         //employeeId: {val: null, type: dbParams.NUMBER, dir: dbParams.BIND_IN},
         dataSource:  {type: dbParams.CURSOR, dir: dbParams.BIND_OUT}
